@@ -1,0 +1,14 @@
+# Generated reports
+*.csv
+*.html
+CitrixSiteDoc_*/
+# Transcripts / logs
+*.log
+*.transcript.txt
+# Secrets - never commit DaaS secure client files
+secureclient*.csv
+*.secret
+# OS/editor
+Thumbs.db
+.DS_Store
+.vscode/
