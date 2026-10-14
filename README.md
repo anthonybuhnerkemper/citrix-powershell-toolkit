@@ -1,8 +1,21 @@
 # Citrix PowerShell Toolkit
 
+[![PowerShell Gallery](https://img.shields.io/powershellgallery/v/ABK.CitrixToolkit?label=PowerShell%20Gallery)](https://www.powershellgallery.com/packages/ABK.CitrixToolkit) [![Downloads](https://img.shields.io/powershellgallery/dt/ABK.CitrixToolkit)](https://www.powershellgallery.com/packages/ABK.CitrixToolkit)
+
 PowerShell scripts and a long-form guide for managing **Citrix Virtual Apps and Desktops (on-prem)** and **Citrix DaaS** with the Citrix PowerShell SDK. The scripts lean toward read-only reporting. The few that change state support `-WhatIf` and `-Confirm`.
 
 📘 **Start with the guide:** [GUIDE.md](GUIDE.md), *Managing Citrix Virtual Apps and Desktops with the PowerShell SDK*
+
+
+## Install from PowerShell Gallery
+
+```powershell
+Install-Module ABK.CitrixToolkit -Scope CurrentUser
+Import-Module ABK.CitrixToolkit
+Get-Command -Module ABK.CitrixToolkit
+```
+
+Each script is also exported as a function with the same name and parameters (e.g. `Get-Help <FunctionName> -Full`). Prerequisite modules (Microsoft Graph, ExchangeOnlineManagement, ConfigMgr console, Citrix SDK, etc.) are not auto-installed; install the ones the functions you use need, as described below. The module source lives in [`ABK.CitrixToolkit/`](ABK.CitrixToolkit/).
 
 ## Requirements
 
